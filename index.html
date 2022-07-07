@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+<body style="text-align:center;">
+    <input placeholder="enter first number" id="n1"><br><br>
+    <input placeholder="enter second number" id="n2"><br><br>
+    <button type="submit" onclick="add()">add</button><br>
+    <button type="submit" onclick="sub()">sub</button><br>
+    <button type="submit" onclick="div()">div</button><br>
+    <button type="submit" onclick="pdc()">multiply</button><br>
+
+
+
+    <div id="Result"> </div>
+
+
+    
+    <script>
+        function add(){
+            var x= parseFloat(document.getElementById("n1").value);
+            var y= parseFloat(document.getElementById("n2").value);
+            var z= x+y;
+            var res = z.toFixed(2)
+            document.getElementById("Result").innerHTML=res
+            
+        }
+        function sub(){
+            var x= parseFloat(document.getElementById("n1").value);
+            var y= parseFloat(document.getElementById("n2").value);
+            var z= x-y;
+            var res = z.toFixed(2)
+            document.getElementById("Result").innerHTML=res
+
+        }
+
+        function div(){
+            var x= parseFloat(document.getElementById("n1").value);
+            var y= parseFloat(document.getElementById("n2").value);
+            var z= x/y;
+            var res = z.toFixed(2)
+            document.getElementById("Result").innerHTML=res
+
+        
+        }
+        function pdc(){
+            var x= parseFloat(document.getElementById("n1").value);
+            var y= parseFloat(document.getElementById("n2").value);
+            var z= x*y;
+            var res = z.toFixed(2)
+            document.getElementById("Result").innerHTML=res;
+                    }
+    </script>
+
+
+</body>
+</html>
